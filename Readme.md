@@ -1,4 +1,4 @@
-#Introduction
+## Introduction
 
 This is the re-implementation of the 2016 paper: [Surface approximation via sparse representation and parameterization optimization](http://staff.ustc.edu.cn/~lgliu/Publications/Publications/2016-CAD-SPM2016-SparseRep.pdf)
 
@@ -13,5 +13,6 @@ Remember to add the following command before using this package:
 addpath(genpath('/external/matlabmesh/'))
 ```
 
-#How to run
+## How to run
+
 Just run example.m ,come on this is matlab script :)
