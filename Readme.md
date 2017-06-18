@@ -11,6 +11,7 @@ This package is stored at ./external/matlabmesh folder.
 Remember to add the following command before using this package:
 ```matlab
 addpath(genpath('/external/matlabmesh/'))
+```
 
 #How to run
 Just run example.m ,come on this is matlab script :)
