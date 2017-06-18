@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# mesh cache
+.meshcache
+.obj.meshcache
+
 # =========================
 # Operating System Files
 # =========================
