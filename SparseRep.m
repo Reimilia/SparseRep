@@ -47,7 +47,7 @@ while(loop_count<n_iter && err>=err_tolerance)
     P= get_numerical_basis(p_basis,U);
     % Sparsity Optimization
     last_c=c;
-    c= OMP(f+lambda/rho,P,sparse_para);
+    c= OMP(f+lambda/rho,P,sparse_para)
     % Parameterization Optimization
     func= @(x)optimization_function(x,...
             f,c,u0,p_basis,mesh,beta1,beta2,rho,lambda);

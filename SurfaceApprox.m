@@ -47,8 +47,9 @@ for i=3:3
     end
 end
 
-approx_v(:,1)= mesh.v(:,1);
-approx_v(:,2)=mesh.v(:,2);
+% Add non-linear transfer part to the generated mesh
+approx_v(:,1)=u(:,1);
+approx_v(:,2)=u(:,2);
 tar_mesh.v= approx_v;
 tar_mesh.n= estimateNormal(tar_mesh);
 

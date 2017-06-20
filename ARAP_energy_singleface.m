@@ -1,6 +1,7 @@
 function val = ARAP_energy_singleface( mesh, u, findex )
-%ARAP_ENERGY_SINGLEFACE 此处显示有关此函数的摘要
-%   此处显示详细说明
+%ARAP_ENERGY_SINGLEFACE 
+
+%   Calculate the energy on each face.
 
 A=mesh.farea(findex);
 vertid= mesh.f(findex,:);

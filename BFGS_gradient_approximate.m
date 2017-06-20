@@ -9,7 +9,7 @@ max_iter= get_options(options,'iterstep',10);
 tolerance = get_options(options,'tol', 1e-4);
 
 %  Initialize parameter structure for StepSize function call.
-params = struct('ftol', 0.5, 'gtol', 0.9, 'xtol', 1e-4, 'stpmin', 0, ...
+params = struct('ftol', 0.3, 'gtol', 0.4, 'xtol', 1e-4, 'stpmin', 0, ...
                 'stpmax', 20, 'maxfev', 10000);
 
 xc.p= u0;

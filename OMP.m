@@ -6,9 +6,9 @@ dict_column=zeros(1,s);
 res=y;
 
 for i=1:s
-    proj = abs(res*D);
-    max_v=-1;
+    proj = abs(res*D)./sqrt(sum(D.^2));
     % pick the max influence projection column
+    max_v=-1;
     for j=1:length(proj)
         if isempty(find(dict_column==j,1))==0
             continue;

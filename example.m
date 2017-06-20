@@ -1,6 +1,6 @@
 addpath(genpath('external\matlabmesh'));
 
-mesh=readMesh('data\saddle.obj');
+mesh=readMesh('data\plane_bent3.obj');
 
 % maximum degree for the monomial
 degree= 14;
@@ -41,14 +41,14 @@ for i=0:degree
             end
         end
     end
-end\
+end
 
 %Set parameters for the optimization
 options=[];
 % open the debug output
 options.debug=1;
 % change iter step here
-options.iterstep=15;
+options.iterstep=5;
 
 % let's solve the problem
 new_mesh= SurfaceApprox(mesh,p_basis,options);
